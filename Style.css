@@ -27,8 +27,12 @@
     margin-top: 10px;
     list-style: none;
     padding: 15px;
-    color: #fff;
+    color: rgb(248, 246, 248);
     text-decoration: none;
+}
+
+.menu .menu-conteudo a:hover {
+    color: #9521e2;
 }
 
 .Section-1-bg {
@@ -62,7 +66,7 @@ aside {
     padding: 10px;
 }
 
-.main-title {
+#main-title {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -70,7 +74,7 @@ aside {
     flex-wrap: wrap;
 }
 
-.main-title h1 {
+#main-title h1 {
     font-size: 70px;
     color: #fff;
     margin-top: 15%;
@@ -79,7 +83,7 @@ aside {
     letter-spacing: 2px;
 }
 
-.main-title h2 {
+#main-title h2 {
     color: #7200ff;
     font-size: 50px;
     font-family: "Hanuman";
@@ -87,7 +91,7 @@ aside {
     letter-spacing: 2px;
 }
 
-.main-title h5 {
+#main-title h5 {
     color: #fff;
     font-size: 15px;
     font-family: "Hanuman";
@@ -95,7 +99,7 @@ aside {
     font-weight: 200;
 }
 
-.main-title button {
+#main-title .btn {
     width: 15%;
     margin-top: 80px;
     padding: 8px 5px;
@@ -108,9 +112,11 @@ aside {
     cursor: pointer;
     transition-duration: .9s;
 
+    text-decoration: none;
+    text-align: center;
 }
 
-.main-title button:hover {
+#main-title .btn:hover {
     border: solid 1px #7200ff;
     transition: 0.7s;
     background: transparent;
@@ -167,7 +173,7 @@ aside {
     font-weight: bold;
 }
 
-.main-title h5 {
+#main-title h5 {
     font-size: 13px;
 }
 
@@ -182,7 +188,7 @@ aside {
     /* font-size: 25px; */
 }
 
-#Sobre-mim button {
+#Sobre-mim .btn {
     background-color: #EF0453;
     margin-left: 35%;
     margin-top: 30px;
@@ -197,22 +203,22 @@ aside {
 
 }
 
-#Sobre-mim button:hover {
+/* #Sobre-mim .btn:hover {
     color: #EF0453;
     transform: translate(0.9);
     transition: 0.8s;
     background: transparent;
 
-}
+} */
 
-.Container {
+#Container {
     width: 100%;
     background-color: #F3EEEE;
     padding: 50px;
 
 }
 
-.Container h1 {
+#Container h1 {
     text-align: center;
     font-size: 70px;
     font-family: "Inria Sans";
@@ -220,7 +226,7 @@ aside {
     padding-top: 12%;
 }
 
-.Container p {
+#Container p {
     text-align: center;
     font-family: "Inria Sans";
     color: #685B5B;
@@ -378,10 +384,10 @@ aside {
 
 @media only screen and (max-width: 1024px) {
     .Section-1-bg {
-        background-image: url(background_tablet.png);
+        background-image: url(imagens/background_tablet.png);
     }
 
-    .main-title button {
+    #main-title .btn {
         width: 35%;
         margin-top: 80px;
         padding: 8px 5px;
@@ -394,7 +400,7 @@ aside {
         transition-duration: .9s;
     }
 
-    .Sobre-mim p {
+    #Sobre-mim p {
         margin-top: 15px;
         font-size: 14px;
         padding: 30px;
@@ -423,19 +429,23 @@ aside {
         background-image: url(imagens/backgroun_mobile.png);
     }
 
-    .main-title h1 {
+    #main-title h1 {
         font-size: 40px;
         margin-top: 31%;
         margin-right: 15%;
     }
 
-    .main-title h2 {
+    #main-title h2 {
         font-size: 26px;
         margin-right: 15%;
     }
 
-    .main-title button {
+    #main-title .btn {
         width: 249px;
+    }
+
+    #Container h1 {
+        font-size: 50px;
     }
 
     #barra-menu {
@@ -460,10 +470,7 @@ aside {
     }
 
     #barra-menu ul li a:hover {
-        border: solid 1px #C229AA;
-        padding: 8px;
-        border-radius: 15px;
-        background: #7601c4;
+        color: #9521e2;
     }
 
     .icon-redes {
@@ -482,10 +489,9 @@ aside {
         padding: 5px;
     }
 
-    .icon .instagram{
+    .icon .instagram {
         width: 50px;
         height: 50px;
-        /* padding: 5px; */
         margin-top: -7px;
     }
 
@@ -528,10 +534,10 @@ aside {
         text-align: justify;
     }
 
-    #Sobre-mim button {
+    /* #Sobre-mim button {
         margin-top: 50px;
         text-align: center;
-    }
+    } */
 
     .Card {
         margin-top: 35px;

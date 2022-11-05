@@ -11,3 +11,4 @@ function abrirmenu(){
         BarraMenuAberto.style.height = "0px";
     }
 }
+
