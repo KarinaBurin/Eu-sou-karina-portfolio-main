@@ -20,7 +20,6 @@
     font-family: "Poppins";
     text-transform: uppercase;
     align-items: center;
-
 }
 
 .menu .menu-conteudo a {
@@ -35,7 +34,7 @@
     color: #9521e2;
 }
 
-.Section-1-bg {
+#Section-1-bg {
     background-image: url(imagens/background.png);
     background-repeat: no-repeat;
     background-position: center center;
@@ -57,13 +56,6 @@ aside {
     height: 45px;
     margin-right: 15px;
     margin-top: 15px;
-}
-
-.icon .facebook,
-.linkedin {
-    width: 55px;
-    height: 55px;
-    padding: 10px;
 }
 
 #main-title {
@@ -120,8 +112,6 @@ aside {
     border: solid 1px #7200ff;
     transition: 0.7s;
     background: transparent;
-
-
 }
 
 .title h3 {
@@ -139,8 +129,25 @@ aside {
 .title:hover {
     transition: 1.2;
     transform: scale(1.1);
-
 }
+
+.icon-redes {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    right: 0px;
+    top: 30%;
+    background-color: rgba(255, 244, 255, 0.4);
+    align-items: center;
+}
+
+.icon .facebook,
+.linkedin {
+    width: 55px;
+    height: 55px;
+    padding: 10px;
+}
+
 
 #C-sobre {
     display: flex;
@@ -173,10 +180,6 @@ aside {
     font-weight: bold;
 }
 
-#main-title h5 {
-    font-size: 13px;
-}
-
 #Sobre-mim span {
     color: #FD0BF3;
 }
@@ -185,7 +188,6 @@ aside {
     margin-top: 25px;
     font-family: "Inria Sans";
     text-align: justify;
-    /* font-size: 25px; */
 }
 
 #Sobre-mim .btn {
@@ -200,16 +202,7 @@ aside {
     cursor: pointer;
     box-shadow: 4px 4px 4px #858585, 4px 4px 4px #858585;
     transition-duration: .9s;
-
 }
-
-/* #Sobre-mim .btn:hover {
-    color: #EF0453;
-    transform: translate(0.9);
-    transition: 0.8s;
-    background: transparent;
-
-} */
 
 #Container {
     width: 100%;
@@ -223,7 +216,6 @@ aside {
     font-size: 70px;
     font-family: "Inria Sans";
     font-weight: bold;
-    padding-top: 12%;
 }
 
 #Container p {
@@ -231,31 +223,9 @@ aside {
     font-family: "Inria Sans";
     color: #685B5B;
     margin-top: 25px;
-
 }
 
 .C-card {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 15%;
-    text-align: center;
-    flex-wrap: wrap;
-}
-
-
-.Card {
-    background-color: #FFFBFB;
-    padding: 50px;
-    box-shadow: 4px 4px 4px #858585, 4px 4px 4px #858585;
-
-}
-
-.Card img {
-    width: 75px;
-    height: auto;
-}
-
-.C-card-2 {
     display: flex;
     justify-content: space-around;
     margin-top: 5%;
@@ -263,24 +233,22 @@ aside {
     flex-wrap: wrap;
 }
 
-.Card h3 {
-    font-size: 20px;
-    font-family: "Inria Sans";
-    font-weight: 700;
+
+.Card {
+    padding: 50px;
 }
 
-.Card h4 {
-    font-family: "Inria Sans";
-    font-weight: lighter;
-    color: #BEB7B7;
-    margin-top: 15px;
+.Card img {
+    width: 450px;
+    height: auto;
+    box-shadow: 4px 4px 4px #858585, 4px 4px 4px #858585;
+    border-radius: 10px;
 }
 
 .Card:hover {
-    transform: scale(1.1);
+    transform: scale(1.5);
     transition-duration: .9s;
 }
-
 
 .C-projetos {
     width: 100%;
@@ -383,7 +351,7 @@ aside {
 }
 
 @media only screen and (max-width: 1024px) {
-    .Section-1-bg {
+    #Section-1-bg {
         background-image: url(imagens/background_tablet.png);
     }
 
@@ -425,7 +393,7 @@ aside {
         display: none;
     }
 
-    .Section-1-bg {
+    #Section-1-bg {
         background-image: url(imagens/backgroun_mobile.png);
     }
 
@@ -442,6 +410,10 @@ aside {
 
     #main-title .btn {
         width: 249px;
+    }
+
+    #main-title h5 {
+        font-size: 10px;
     }
 
     #Container h1 {
@@ -473,32 +445,9 @@ aside {
         color: #9521e2;
     }
 
-    .icon-redes {
-        margin-top: 10px;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        gap: 10px;
-        overflow: hidden;
-    }
-
-    .icon .facebook,
-    .linkedin {
-        width: 35px;
-        height: 35px;
-        padding: 5px;
-    }
-
-    .icon .instagram {
-        width: 50px;
-        height: 50px;
-        margin-top: -7px;
-    }
-
     .img-projetos img {
         width: 300px;
         height: auto;
-
     }
 
     .img-2 img {
@@ -510,7 +459,6 @@ aside {
 
     .C-rodapé form input:last-child {
         width: 100px;
-
     }
 
     .image img {
@@ -519,34 +467,42 @@ aside {
         margin-top: -120px;
     }
 
-
+    #C-sobre {
+        margin-top: 156px;
+        padding: 0px;
+    }
 
     #Sobre-mim h1 {
         margin-top: 23px;
         font-size: 45px;
     }
 
-
     #Sobre-mim p {
-        margin-top: 15px;
+        margin-top: -25px;
         font-size: 14px;
-        padding: 30px;
+        padding: 57px;
         text-align: justify;
     }
 
-    /* #Sobre-mim button {
-        margin-top: 50px;
-        text-align: center;
-    } */
-
     .Card {
         margin-top: 35px;
+        padding: 0px;
     }
 
-    .C-card-2 {
-        margin-top: 35px;
+    .Card img {
+        width: 324px;
+    }
+    
+     h3 {
+        font-size: 20px;
+        font-family: "Inria Sans";
+        font-weight: 700;
+        margin-top: 29px;
     }
 
-
+    .Card:hover {
+        transform: scale(1.2);
+        transition-duration: .9s;
+    }
 
 }
